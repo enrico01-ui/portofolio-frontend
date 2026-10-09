@@ -102,25 +102,36 @@ export default function Hero() {
  
       {/* FOTO */}
       <div className="relative flex justify-center md:justify-end order-1 md:order-2">
-        <div className="relative w-full max-w-[520px]">
-          <span className="absolute top-[6%] left-[16%] w-28 h-28 rounded-full bg-white/90 blur-xl" />
+        <div className="relative w-full max-w-[300px] md:max-w-[380px]">
+          {/* cahaya halus di dekat kepala */}
+          <span className="absolute top-[10%] left-[6%] w-24 h-24 rounded-full bg-white/90 blur-xl" />
+
+          {/* bentuk organik, kompak, berpusat di belakang torso */}
           <svg
             aria-hidden
-            viewBox="0 0 400 370"
-            className="absolute bottom-0 left-[54%] -translate-x-1/2 w-[105%] text-[var(--soft)]"
+            viewBox="0 0 400 400"
+            className="absolute left-[47%] top-[58%] -translate-x-1/2 -translate-y-1/2 w-[106%] aspect-square text-[#d6daf5]"
           >
             <path
               fill="currentColor"
-              d="M60 330c-20-60 10-120 60-170s110-90 170-100c40-6 80 10 90 50 12 50-30 90-70 130-30 30-30 70-70 90-50 26-150 20-180-0z"
+              d="M205 38C295 28 372 105 358 200C346 292 285 372 190 364C98 356 34 290 44 198C54 108 118 48 205 38Z"
             />
           </svg>
+
           <Image
             src="/Photo/meRemoveBG2.png"
             alt="Emanuel Enrico Anindya Wibawa"
             width={520}
-            height={620}
+            height={800}
+            sizes="(min-width: 768px) 380px, 300px"
             priority
-            className="relative z-10 w-full h-auto grayscale [mask-image:linear-gradient(to_bottom,black_85%,transparent)]"
+            className="relative z-10 w-full h-auto grayscale"
+            style={{
+              WebkitMaskImage:
+                "linear-gradient(to bottom, #000 0%, #000 52%, rgba(0,0,0,.92) 60%, rgba(0,0,0,.72) 70%, rgba(0,0,0,.42) 80%, rgba(0,0,0,.16) 90%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to bottom, #000 0%, #000 52%, rgba(0,0,0,.92) 60%, rgba(0,0,0,.72) 70%, rgba(0,0,0,.42) 80%, rgba(0,0,0,.16) 90%, transparent 100%)",
+            }}
           />
         </div>
       </div>
