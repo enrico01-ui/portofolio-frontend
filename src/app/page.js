@@ -80,10 +80,10 @@ export default function Home() {
             <div className="text-[var(--accent)] text-sm font-semibold mb-4">Software Developer (Kerja Praktik)</div>
             <ul className="space-y-2 text-sm text-[var(--muted)] max-w-2xl">
               {[
-                "Mengembangkan sistem informasi akademik (SIAKAD) berbasis web dan mobile untuk pengelolaan data akademik sekolah.",
-                "Membangun aplikasi web dengan React.js dan Vite, terhubung ke backend Laravel REST API.",
-                "Membangun fitur presensi, SPP, rapor digital, pengumuman, dan laporan.",
-                "Mengembangkan aplikasi mobile pendamping menggunakan Flutter.",
+                "Mengembangkan Sistem Informasi Akademik (SIAKAD) berbasis Web (React + Vite) dan Mobile (Flutter) terintegrasi dengan REST API Laravel & MySQL.",
+                "Implementasi fitur Presensi Guru berbasis presisi lokasi (Geolocation/Geofencing) dan verifikasi foto selfie menggunakan kamera HP.",
+                "Membangun modul Manajemen Pembayaran (Tuition & Facility Fee) dengan mekanisme unggah serta verifikasi bukti transfer pembayaran.",
+                "Membangun portal Siswa & Wali Kelas untuk akses daftar siswa, riwayat pembayaran, pengumuman, serta cetak/unduh Rapor Digital dalam format PDF.",
                 "Melakukan deployment backend Laravel dan MySQL menggunakan Railway serta frontend web menggunakan Cloudflare Pages.",
                 "Bekerja dengan pendekatan Agile-Iterative sepanjang proses pengembangan.",
               ].map((t) => (
