@@ -12,7 +12,7 @@ const projects = [
     label: "Tugas Akhir",
     title: "Academic Data Security Testing System",
     description: "Aplikasi pengujian keamanan dan integritas data akademik, membandingkan Ethereum Sepolia Testnet dan Hyperledger Fabric dengan JWT, RBAC, dan verifikasi SHA-256.",
-    stack: ["React.jsx", "Node.js", "PostgreSQL", "Ethereum", "Hyperledger Fabric", "Git", "Postman","Docker", "JavaScript", "Express.js"],
+    stack: ["React.jsx", "Node.js", "PostgreSQL", "Ethereum", "Hyperledger Fabric", "DigitalOcean", "Cloudflare", "Git", "Postman","Docker", "JavaScript", "Express.js"],
     images: ["/ui/tugasakhir/dashboard.png", "/ui/tugasakhir/input.png", "/ui/tugasakhir/verif.png", "REST API"],
     repo: "https://github.com/enrico01-ui/academic-blockchain",
   },
@@ -20,7 +20,7 @@ const projects = [
     label: "Kerja Praktik",
     title: "SIAKAD — Hagios School of Life",
     description: "Sistem informasi akademik web dan mobile untuk presensi, SPP, rapor digital, dan pengumuman sekolah.",
-    stack: ["React.jsx", "Vite", "Laravel", "Flutter", "MySQL", "Dart", "Git", "REST API", "Postman", "PHP", "Firebase", "JavaScript"],
+    stack: ["React.jsx", "Vite", "Laravel", "Flutter", "MySQL", "Dart", "Railway", "Cloudflare","Git", "REST API", "Postman", "PHP", "Firebase", "JavaScript"],
     images: [
       "/ui/kp/login.png", "/ui/kp/dashboardadmin.png", "/ui/kp/dashboardmobile.jpg", "/ui/kp/datamaster.png",
       "/ui/kp/loginmobile.jpg", "/ui/kp/pengumuman.png",
@@ -43,8 +43,9 @@ const skillGroups = [
   { title: "Frontend", items: ["React.js", "React JSX", "Vite", "Flutter", "Bootstrap"] },
   { title: "Backend", items: ["Laravel", "Node.js", "Express.js", "REST API"] },
   { title: "Database", items: ["PostgreSQL", "MySQL"] },
+  { title: "Cloud & Deployment", items: ["DigitalOcean", "Railway", "Cloudflare", "Docker"] },
   { title: "Bahasa", items: ["JavaScript", "Dart", "PHP", "Java", "C++", "C#"] },
-  { title: "Tools", items: ["Git", "Postman", "Figma", "Firebase", "Docker"] },
+  { title: "Tools", items: ["Git", "Postman", "Figma", "Firebase"] },
   { title: "Blockchain", items: ["Ethereum", "Hyperledger Fabric"] },
 ];
 
@@ -83,6 +84,7 @@ export default function Home() {
                 "Membangun aplikasi web dengan React.js dan Vite, terhubung ke backend Laravel REST API.",
                 "Membangun fitur presensi, SPP, rapor digital, pengumuman, dan laporan.",
                 "Mengembangkan aplikasi mobile pendamping menggunakan Flutter.",
+                "Melakukan deployment backend Laravel dan MySQL menggunakan Railway serta frontend web menggunakan Cloudflare Pages.",
                 "Bekerja dengan pendekatan Agile-Iterative sepanjang proses pengembangan.",
               ].map((t) => (
                 <li key={t} className="flex gap-3">
