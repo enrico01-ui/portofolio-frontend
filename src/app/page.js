@@ -22,9 +22,9 @@ const projects = [
     description: "Sistem informasi akademik web dan mobile untuk presensi, SPP, rapor digital, dan pengumuman sekolah.",
     stack: ["React.jsx", "Vite", "Laravel", "Flutter", "MySQL", "Dart", "Railway", "Cloudflare","Git", "REST API", "Postman", "PHP", "Firebase", "JavaScript"],
     images: [
-      "/ui/kp/login.png", "/ui/kp/dashboardadmin.png", "/ui/kp/dashboardGuru.jpeg", "/ui/kp/datamaster.png",
-      "/ui/kp/loginmobile.jpg", "/ui/kp/pengumuman.png",
-      "/ui/kp/presensiGuruPage.jpg", "/ui/kp/rapor.png", "/ui/kp/riwayatpresensi.jpg",
+      "/ui/kp/login.png", "/ui/kp/dashboardadmin.png", "/ui/kp/dasboardGuru.jpeg", "/ui/kp/datamaster.png",
+       "/ui/kp/pengumuman.png",
+      "/ui/kp/presensiGuruPage.jpeg", "/ui/kp/rapor.png", "/ui/kp/riwayatpresensi.jpg",
       "/ui/kp/tagihanSiswa.jpeg", "/ui/kp/tagihanmobile.jpg", "/ui/kp/verifikasispp.png", "/ui/kp/pengajuanIzin.jpeg", "/ui/kp/dataKelas.jpeg", "ui/kp/dashboardSiswaMobile.jpeg"
     ],
     repo: "https://github.com/enrico01-ui/siakad-frontend",

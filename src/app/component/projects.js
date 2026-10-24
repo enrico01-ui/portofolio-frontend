@@ -67,7 +67,7 @@ export default function Projects({ projects = [] }) {
                 alt={`${project.title} — tampilan ${imgIndex + 1}`}
                 fill
                 sizes="(min-width: 1024px) 700px, 100vw"
-                className="object-fit animate-[fadeUp_0.3s_ease-out_both]"
+                className="object-contain animate-[fadeUp_0.3s_ease-out_both]"
               />
             )}
             <span className="absolute bottom-3 right-3 bg-[var(--ink)]/80 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 opacity-0 transition group-hover:opacity-100">
