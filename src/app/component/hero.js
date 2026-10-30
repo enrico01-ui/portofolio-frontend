@@ -49,7 +49,7 @@ export default function Hero() {
         </h1>
  
         <p className="text-sm leading-relaxed text-[var(--muted)]">
-          <span className="text-[var(--accent)]">Frontend developer</span> lulusan Informatika
+          <span className="text-[var(--accent)]">Software developer</span> lulusan Informatika
           UAJY, berbasis di Yogyakarta. Membangun antarmuka React.js &amp; Vite yang
           tersambung rapi ke backend Laravel dan Node.js — dari dashboard akademik sampai
           sistem verifikasi data berbasis blockchain.
