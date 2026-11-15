@@ -6,26 +6,60 @@ import Skills from "./component/skills";
 import SectionHeading from "./component/sectionHeading";
 import Projects from "./component/projects";
 import Education from "./component/education";
+import Certificates from "./component/certificates";
 
+const certificates = [
+  {
+    title: "Frontend Developer (React)",
+    issuer: "HackerRank",
+    description: "Lulus tes sertifikasi peran HackerRank untuk Frontend Developer dengan React.",
+    date: "Okt 2026",
+    image: "/cert/frontenddevcert.png",
+    credentialUrl: "https://www.hackerrank.com/certificates/cf30726b4c16", // salin link verifikasi dari akun HackerRank kamu
+  },
+  {
+    title: "Software Engineer",
+    issuer: "HackerRank",
+    description: "Lulus tes sertifikasi peran HackerRank untuk Software Engineer.",
+    date: "Okt 2026",
+    image: "/cert/softwareengineercert.png",
+    credentialUrl: "https://www.hackerrank.com/certificates/7ca251db765e",
+  },
+  {
+    title: "Problem Solving (Intermediate)",
+    issuer: "HackerRank",
+    description: "Lulus tes sertifikasi skill HackerRank untuk problem solving tingkat menengah.",
+    date: "Okt 2026",
+    image: "/cert/problemsolvingcert.png",
+    credentialUrl: "https://www.hackerrank.com/certificates/57053d73180b",
+  },
+  {
+    title: "EnglishScore Core Skills",
+    issuer: "British Council",
+    description: "CEFR B2 (Upper Intermediate), skor 477: grammar, vocabulary, reading, dan listening.",
+    date: "Jun 2024",
+    image: "/cert/EnglishCouncilCert.jpg",
+  },
+];
 const projects = [
   {
     label: "Tugas Akhir",
     title: "Academic Data Security Testing System",
     description: "Aplikasi pengujian keamanan dan integritas data akademik, membandingkan Ethereum Sepolia Testnet dan Hyperledger Fabric dengan JWT, RBAC, dan verifikasi SHA-256.",
     stack: ["React.jsx", "Node.js", "PostgreSQL", "Ethereum", "Hyperledger Fabric", "DigitalOcean", "Cloudflare", "Git", "Postman","Docker", "JavaScript", "Express.js"],
-    images: ["/ui/tugasakhir/dashboard.png", "/ui/tugasakhir/input.png", "/ui/tugasakhir/verif.png", "REST API"],
+    images: ["/ui/tugasakhir/dashboard.png", "/ui/tugasakhir/input.png", "/ui/tugasakhir/verif.png"],
     repo: "https://github.com/enrico01-ui/academic-blockchain",
   },
   {
     label: "Kerja Praktik",
     title: "SIAKAD — Hagios School of Life",
     description: "Sistem informasi akademik web dan mobile untuk presensi, SPP, rapor digital, dan pengumuman sekolah.",
-    stack: ["React.jsx", "Vite", "Laravel", "Flutter", "MySQL", "Dart", "Railway", "Cloudflare","Git", "REST API", "Postman", "PHP", "Firebase", "JavaScript"],
+    stack: ["React.jsx", "Vite", "Laravel", "Flutter", "MySQL", "Dart", "Railway", "Cloudflare","Git", "Postman", "PHP", "Firebase", "JavaScript"],
     images: [
       "/ui/kp/login.png", "/ui/kp/dashboardadmin.png", "/ui/kp/dasboardGuru.jpeg", "/ui/kp/datamaster.png",
        "/ui/kp/pengumuman.png",
       "/ui/kp/presensiGuruPage.jpeg", "/ui/kp/rapor.png", "/ui/kp/riwayatpresensi.jpg",
-      "/ui/kp/tagihanSiswa.jpeg", "/ui/kp/tagihanmobile.jpg", "/ui/kp/verifikasispp.png", "/ui/kp/pengajuanIzin.jpeg", "/ui/kp/dataKelas.jpeg", "ui/kp/dashboardSiswaMobile.jpeg"
+      "/ui/kp/tagihanSiswa.jpeg", "/ui/kp/tagihanmobile.jpg", "/ui/kp/verifikasispp.png", "/ui/kp/pengajuanIzin.jpeg", "/ui/kp/dataKelas.jpeg", "/ui/kp/dashboardSiswaMobile.jpeg"
     ],
     repo: "https://github.com/enrico01-ui/siakad-frontend",
   },
@@ -108,11 +142,14 @@ export default function Home() {
       </Reveal>
 
       {/* EDUCATION */}
-      <section id="education" className={section}>
+      <Reveal>
         <Education />
 
-      </section>
-
+      </Reveal>
+      {/* CERTIFICATES */}
+      <Reveal>
+        <Certificates certificates={certificates} />
+      </Reveal>          
       {/* CONTACT */}
       <footer id="contact" className={`${section} text-center`}>
         <h2 className="text-4xl md:text-5xl font-extrabold text-[var(--ink)] mb-4">

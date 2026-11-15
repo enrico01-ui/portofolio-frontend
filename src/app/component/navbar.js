@@ -8,8 +8,10 @@ const links = [
   { href: "#pengalaman", label: "Pengalaman" },
   { href: "#projects", label: "Proyek" },
   { href: "#skills", label: "Keahlian" },
+  { href: "#education", label: "Pendidikan" },
+  { href: "#sertifikat", label: "Sertifikat" },
   { href: "#contact", label: "Kontak" },
-];
+]; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
