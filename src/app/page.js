@@ -1,6 +1,5 @@
 import Reveal from "@/app/reveal";
 import Hero from "./component/hero";
-import ProjectCard from "./component/projectCard";
 import About from "./component/about";
 import Skills from "./component/skills";
 import SectionHeading from "./component/sectionHeading";
@@ -49,6 +48,7 @@ const projects = [
     stack: ["React.jsx", "Node.js", "PostgreSQL", "Ethereum", "Hyperledger Fabric", "DigitalOcean", "Cloudflare", "Git", "Postman","Docker", "JavaScript", "Express.js"],
     images: ["/ui/tugasakhir/dashboard.png", "/ui/tugasakhir/input.png", "/ui/tugasakhir/verif.png"],
     repo: "https://github.com/enrico01-ui/academic-blockchain",
+    demo: "https://siakad-blockchain-frontend.pages.dev/login",
   },
   {
     label: "Kerja Praktik",
@@ -62,6 +62,7 @@ const projects = [
       "/ui/kp/tagihanSiswa.jpeg", "/ui/kp/tagihanmobile.jpg", "/ui/kp/verifikasispp.png", "/ui/kp/pengajuanIzin.jpeg", "/ui/kp/dataKelas.jpeg", "/ui/kp/dashboardSiswaMobile.jpeg"
     ],
     repo: "https://github.com/enrico01-ui/siakad-frontend",
+    demo: "https://siakadhsol.pages.dev/",
   },
   {
     label: "KKN",
@@ -70,6 +71,7 @@ const projects = [
     stack: ["React.jsx", "Bootstrap", "Laravel", "JavaScript", "PHP", "MySQL"],
     images: ["/ui/kkn/home.png"],
     repo: "https://github.com/enrico01-ui/WebsitePadukuhanSumber",
+    demo: "https://websitepadukuhansumber.pages.dev/",
   },
 ];
 

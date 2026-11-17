@@ -112,14 +112,26 @@ export default function Projects({ projects = [] }) {
               ))}
             </div>
 
-            <a
-              href={project.repo}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block border border-[var(--ink)] text-[var(--ink)] text-xs font-bold uppercase tracking-wider px-6 py-3 transition hover:bg-[var(--ink)] hover:text-[var(--bg)]"
-            >
-              Lihat repository ↗
-            </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href={project.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-[var(--ink)] text-[var(--ink)] text-xs font-bold uppercase tracking-wider px-6 py-3 transition hover:bg-[var(--ink)] hover:text-[var(--bg)]"
+              >
+                Lihat repository ↗
+              </a>
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block border border-[var(--accent)] bg-[var(--accent)] text-white text-xs font-bold uppercase tracking-wider px-6 py-3 transition hover:opacity-85"
+                >
+                  Buka website ↗
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
